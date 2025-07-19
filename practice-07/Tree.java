@@ -42,14 +42,14 @@ public class Tree{
                 maxHeight = tempHeight;
             }
         }
-        return 1+maxHeight;
+        return 1 + maxHeight;
     }
 
     public int depth(TNode t){
         if (isRoot(t)){
             return 0;
         }
-        return 1+depth(t.getParent());
+        return 1 + depth(t.getParent());
     }
 
     public Iterator<TNode> preOrder(){
