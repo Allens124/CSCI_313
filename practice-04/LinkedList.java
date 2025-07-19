@@ -1,17 +1,14 @@
 public class LinkedList<T>{
-    // instance variables
     private Node<T> head;
     private Node<T> tail;
     private int size;
 
-    // constructor
     public LinkedList(){
         head = new Node<>(null, null);
         tail = new Node<>(null, null);
         size = 0;
     }
 
-    // addHead() method
     public void addHead(T d){
         Node<T> nn = new Node<>(d, null);
         if (size == 0){
@@ -24,7 +21,6 @@ public class LinkedList<T>{
         size++;
     }
 
-      // addTail() method
     public void addTail(T d){
         Node<T> nn = new Node<>(d, null);
         if (size == 0){
@@ -37,7 +33,6 @@ public class LinkedList<T>{
         size++;
     }
 
-    // removeHead() method
     public T removeHead() throws Exception{
         if (size == 0){
             throw new Exception("List is empty.");
@@ -48,7 +43,6 @@ public class LinkedList<T>{
         return ans;
     }
 
-    // removeTail() method
     public T removeTail() throws Exception{
         if (size == 0){
             throw new Exception("List is empty.");
@@ -70,7 +64,6 @@ public class LinkedList<T>{
         return ans;
     }
 
-    // printList() method
     public void printList(){
         if (size == 0){
             System.out.println("List is empty.");
